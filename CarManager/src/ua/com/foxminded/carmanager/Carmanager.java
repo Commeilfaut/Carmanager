@@ -1,5 +1,8 @@
 package ua.com.foxminded.carmanager;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Carmanager {
 
 	public static void main(String[] args) {
@@ -9,6 +12,14 @@ public class Carmanager {
 		Car renaualt = new Bus("Renault Laguna", 2000, 9700, 1600, Color.WHITE);
 		
 		Car renaualt2 = new Bus("Renault Laguna", 2000, 9700, 1600, Color.WHITE);
+		
+		List<Car> cars = new ArrayList<>();
+		
+		cars.add(prius);
+		cars.add(renaualt);
+		cars.add(renaualt2);
+		
+		System.out.println(cars);
 		
 		prius.addDistance(1000);
 		
